@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%hfo7@6c(ptnkacx#+4oz9+nq+x=qqqf536=1oq4z6=+v5wu@a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'https://velan-portfolio.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
