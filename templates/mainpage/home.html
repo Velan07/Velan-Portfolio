@@ -7,40 +7,40 @@
   <link rel="stylesheet" href="{% static 'css/output.css' %}">
   <link rel="icon" type="image/x-icon" href="{% static 'images/favicon/favicon.ico' %}">
   <title>Velan's Portfolio</title>
-
 </head>
-<body class="bg-slate-900">
+
+<body class="bg-[url('/static/images/main/background-2.png')] bg-cover bg-no-repeat bg-center bg-fixed">
   <header>
-    <nav class="bg-slate-900 text-neutral-200 py-10 fixed top-0 left-0 w-full z-10 shadow-lg">
+    <nav class="text-neutral-200 py-10 top-0 left-0 w-full z-10 shadow-lg">
       <div class="container mx-auto flex justify-center items-center">
         <div class="flex space-x-6">
-          <a href="#" class="hover:text-cyan-400 mx-5">Home</a>
-          <a href="#About" class="hover:text-cyan-400 mx-5">About</a>
-          <a href="#Education" class="hover:text-cyan-400 mx-5">Education</a>
-          <a href="#Skills" class="hover:text-cyan-400 mx-5">Skills</a>
-          <a href="#Projects" class="hover:text-cyan-400 mx-5">Projects</a>
-          <a href="#Contact" class="hover:text-cyan-400 mx-5">Contact</a>
+          <a href="#" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">Home</a>
+          <a href="#About" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">About</a>
+          <a href="#Education" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">Education</a>
+          <a href="#Skills" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">Skills</a>
+          <a href="#Projects" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">Projects</a>
+          <a href="#Contact" class="hover:text-orange-600 mx-auto text-2xl text-slate-900 bg-neutral-300 px-5 rounded-full">Contact</a>
         </div>
       </div>
-    </nav>    
+    </nav>
   </header>
-  <!-- Main Section -->
-  <section id="Home" class="container w-[90%] mx-auto mt-36 flex flex-col items-center relative">
+  <!-- Main Section --> 
+  <section id="Home" class="container w-[90%] mx-auto mt-16 flex flex-col items-center relative">
     <!-- Background Gradient -->
     <div class="absolute w-full h-full blur rounded-lg bg-gradient-to-br from-pink-200 via-cyan-500 to-violet-900 animate-tilt"></div>
     <div class="relative overflow-hidden mx-1 flex flex-wrap gap-5 w-full rounded-lg bg-slate-900">
-      <div class="absolute w-full h-full rounded-lg blur bg-main-bg bg-cover opacity-50"></div>
+      <div class="absolute w-full h-full rounded-lg blur bg-main-bg bg-cover"></div>
       <div class="p-5 opacity-95 text-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 place-items-center">
-        <h1 class="text-neutral-100 font-serif font-extrabold p-3 text-5xl sm:text-6xl md:text-9xl">Velan /</h1>
+        <h1 class="text-neutral-200 font-serif font-extrabold p-3 text-5xl sm:text-6xl md:text-9xl">Velan /</h1>
         <h3 class="text-neutral-200 font-serif font-extrabold  pt-16 text-3xl sm:text-4xl md:text-6xl">
           <span class="animate-typing overflow-hidden border-r-4 border-white whitespace-nowrap">Python Developer</span>
         </h3>
       </div>  
       <div class="flex items-start justify-between w-full p-8">
         <!-- Quote Section -->
-        <div class="rounded-lg shadow-2xl p-6 opacity-95 text-neutral-300 text-lg sm:text-5xl mb-6 max-w-full mx-auto">
+        <div class="text-neutral-200 rounded-lg shadow-2xl p-6 opacity-95 text-lg sm:text-5xl mb-6 max-w-full mx-auto">
           <blockquote class="italic">"The only way to do great work is to <br>love what you do."</blockquote>
-          <p class="mt-2 text-neutral-400 text-end">~ Steve Jobs</p>
+          <p class="mt-2 text-end">~ Steve Jobs</p>
         </div>
   
         <!-- Buttons Section -->
@@ -57,6 +57,11 @@
       </div>
     </div>
   </section>
+  <div>
+    <a href="#" class="fixed bottom-4 right-0 z-50 bg-gray-800 hover:bg-gray-900 text-white p-3 rounded-full shadow-lg">
+      <img src="{% static 'images/main/up-arrow.png' %}" alt="Top" class="w-5 h-5">
+    </a>
+  </div>
   <hr class="h-1 my-28 bg-gray-200 border-0 dark:bg-gray-700">
   
   <!-- About Me Section -->
@@ -87,7 +92,7 @@
       <!-- Timeline Item -->
       <div class="mb-10 ml-6">
         <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-2"></div>
-        <div class="p-6 bg-slate-700 rounded-lg shadow-lg">
+        <div class="p-6 bg-slate-900 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold">B.E. Computer Science and Engineering</h3>
           <h4 class="text-xl font-bold">Vaigai College of Engineering</h4>
           <p class="mt-2 text-lg text-neutral-400 italic">2021 - 2025</p>
@@ -100,7 +105,7 @@
       <!-- Timeline Item -->
       <div class="mb-10 ml-6">
         <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-2"></div>
-        <div class="p-6 bg-slate-700 rounded-lg shadow-lg">
+        <div class="p-6 bg-slate-900 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold">Higher Secondary School Education</h3>
           <h4 class="text-xl font-bold">Government Boys Higher Secondary School</h4>
           <p class="mt-2 text-lg text-neutral-400 italic">2019 - 2021</p>
@@ -114,7 +119,7 @@
       <!-- Timeline Item -->
       <div class="mb-10 ml-6">
         <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-2"></div>
-        <div class="p-6 bg-slate-700 rounded-lg shadow-lg">
+        <div class="p-6 bg-slate-900 rounded-lg shadow-lg">
           <h3 class="text-2xl font-bold">Secondary School Education</h3>
           <h4 class="text-xl font-bold">Sivananda Vidhyalayam Matric Higher Secondary School</h4>
           <p class="mt-2 text-lg text-neutral-400 italic">2018 - 2019</p>
@@ -255,14 +260,14 @@
   <hr class="h-1 my-28 bg-gray-200 border-0 dark:bg-gray-700">
 
   <!-- Projects Section -->
-  <section id="Projects" class="container mx-auto p-10 bg-slate-800 text-neutral-200 rounded-lg shadow-md">
-    <h2 class="text-4xl font-bold text-center mb-10">Projects</h2>
+  <section id="Projects" class="container mx-auto px-2 py-8 text-neutral-200 rounded-lg shadow-md">
+    <h2 class="text-6xl font-bold text-center underline mb-24">Projects</h2>
     
     <!-- Cards Container -->
     <div class="flex flex-col lg:flex-row gap-24 justify-center items-center">
       
       <!-- Completed Project Card -->
-      <div class="max-w-md w-full bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+      <div class="max-w-md w-full bg-slate-900 rounded-lg shadow-lg overflow-hidden">
         <img class="m-2 w-[96%] object-cover rounded-lg shadow-lg" src={% static 'images\projects\Healthcare-project.png' %} alt="Healthcare-project">
         <div class="p-6">
           <h3 class="text-2xl font-semibold mb-2">Healthcare Data Driven Decision Making</h3>
@@ -277,7 +282,7 @@
       </div>
       
       <!-- Ongoing Project Card -->
-      <div class="max-w-md w-full bg-slate-700 rounded-lg shadow-lg overflow-hidden">
+      <div class="max-w-md w-full bg-slate-900 rounded-lg shadow-lg overflow-hidden">
         <img class="m-2 w-[96%] object-cover rounded-lg shadow-lg" src={% static 'images\projects\portfolio.png' %} alt="portfolio">
         <div class="p-6">
           <h3 class="text-2xl font-semibold mb-10">Portfolio Website</h3>
@@ -294,13 +299,13 @@
     </div>
   </section>
   <!-- Small Projects Section -->
-  <section class="container mx-auto mt-16 p-10 bg-slate-800 text-neutral-200 rounded-lg shadow-md">
-    <h2 class="text-4xl font-bold text-center mb-10">Other Python Projects</h2>
+  <section class="container mx-auto mt-16 p-10 text-neutral-200 rounded-lg shadow-md">
+    <h2 class="text-6xl font-bold text-center underline mb-24">Other Python Projects</h2>
     
     <!-- Python Tkinter Projects -->
     <div class="mb-10">
       <h3 class="text-2xl font-semibold text-blue-400 mb-4">Python Tkinter Projects</h3>
-      <div class="bg-slate-700 p-4 rounded-lg shadow-md">
+      <div class="bg-slate-900 p-4 rounded-lg shadow-md">
         <p class="text-lg mb-4 text-neutral-400">I've built a collection of Python projects using Tkinter,
            focusing on creating interactive GUI applications like Text-to-Speech Converter and Password Manager. 
            These projects allowed me to explore creative designs while strengthening my skills in building user-friendly tools.
@@ -313,7 +318,7 @@
     <!-- Python Turtle Projects -->
     <div>
       <h3 class="text-2xl font-semibold text-blue-400 mb-4">Python Turtle Projects</h3>
-      <div class="bg-slate-700 p-4 rounded-lg shadow-md">
+      <div class="bg-slate-900 p-4 rounded-lg shadow-md">
         <p class="text-lg mb-4 text-neutral-400">I've worked on Python Turtle projects that showcase creative designs
            and animations, bringing art and coding together. These projects helped me explore the graphical 
            capabilities of Python, from geometric patterns to interactive visuals. 
@@ -326,13 +331,14 @@
   <hr class="h-1 my-28 bg-gray-200 border-0 dark:bg-gray-700">
 
   <!-- Contact Me Section -->
-  <section id="Contact" class="bg-slate-900 text-neutral-200 py-12">
+  <section id="Contact" class="text-neutral-200 py-12">
     <div class="container mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-6">Contact Me</h2>
       <p class="text-center text-lg mb-8">
         Feel free to get in touch. I'd love to hear from you!
       </p>
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="max-w-xl mx-auto space-y-6">
+      <form action="https://formspree.io/f/manojrzr" method="POST" class="max-w-xl mx-auto space-y-6">
+        <input type="hidden" name="_subject" value="New message from your portfolio site!"> 
         <div>
           <label for="name" class="block mb-2 text-sm">Name</label>
           <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-slate-800 border border-gray-600 rounded-lg text-neutral-200 focus:ring focus:ring-blue-500" required>
@@ -348,12 +354,13 @@
         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg shadow-lg">
           Send Message
         </button>
+
       </form>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer class="bg-slate-800 text-neutral-300 py-6">
+  <footer class="bg-slate-900 text-neutral-300 py-6">
     <div class="container mx-auto flex flex-col items-center space-y-4">
       <p class="text-center text-sm">&copy; 2024 Velan M. All rights reserved.</p>
       <div class="flex space-x-16">

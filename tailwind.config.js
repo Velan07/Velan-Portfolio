@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./mainpage/templates/**/*.{html, js}"],
+  content: ["./templates/mainpage/**/*.{html, js}"],
   darkmode: 'selector',
   theme: {
     extend: {
       backgroundImage:{
-        'main-bg': "url('/static/images/main/bg-photo.png')",
+        'main-bg': "url('/static/images/main/background-1.png')",
       },
       animation: {
         tilt: 'tilt 3s linear infinite'
@@ -22,4 +22,3 @@ module.exports = {
   },
   plugins: [],
 }
-
